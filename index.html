@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de la Compra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Lista de la Compra</h1>
+  </header>
+
+  <main>
+    <section class="categorias">
+      <div class="categoria" id="categoriaLacteos">
+        <h2>Lácteos</h2>
+        <ul id="categoriaLacteosList"></ul>
+      </div>
+
+      <div class="categoria" id="categoriaCarnes">
+        <h2>Carnes</h2>
+        <ul id="categoriaCarnesList"></ul>
+      </div>
+
+      <div class="categoria" id="categoriaVerduras">
+        <h2>Verduras</h2>
+        <ul id="categoriaVerdurasList"></ul>
+      </div>
+
+      <div class="categoria" id="categoriaFrutas">
+        <h2>Frutas</h2>
+        <ul id="categoriaFrutasList"></ul>
+      </div>
+
+      <div class="categoria" id="categoriaPanaderia">
+        <h2>Panadería</h2>
+        <ul id="categoriaPanaderiaList"></ul>
+      </div>
+
+      <div class="categoria" id="categoriaBebidas">
+        <h2>Bebidas</h2>
+        <ul id="categoriaBebidasList"></ul>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Añadir Producto</h2>
+      <form id="formProducto">
+        <label for="nombre">Producto:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" required>
+          <option value="categoriaLacteos">Lácteos</option>
+          <option value="categoriaCarnes">Carnes</option>
+          <option value="categoriaVerduras">Verduras</option>
+          <option value="categoriaFrutas">Frutas</option>
+          <option value="categoriaPanaderia">Panadería</option>
+          <option value="categoriaBebidas">Bebidas</option>
+        </select>
+
+        <button type="submit">Añadir Producto</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
